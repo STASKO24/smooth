@@ -40,6 +40,7 @@ function updateLoaderText() {
 }
 function endLoaderAnimation() {
   body.classList.remove("no-scroll");
+  window.scrollTo(0, 0);
   $(".preloader-trigger").click();
 }
 let tl = gsap.timeline({ onComplete: endLoaderAnimation });
